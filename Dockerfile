@@ -7,6 +7,7 @@ RUN apk update && apk add --no-cache git ca-certificates && update-ca-certificat
 
 
 RUN mkdir /app
+RUN mkdir /app/results
 ADD . /app/
 WORKDIR /app
 CMD ["./Govis-CI"]
